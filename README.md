@@ -1,10 +1,18 @@
 # graphlink
-A library that can be used to implement parallel clustering algorithms
 
-*Takes real world graphs as inputs and generates embedding for it
+Project based on High Performance Graph Analytics
 
-*Runs k-means clustering algorithm on the generated embeddings to generate clusters
-
-*Cluster visualization and Clustering modularity scores are calculated for partitions created by k-means
+*Cluster visualization and Clustering modularity scores are calculated for partitions created by parallel running k-means
 
 *Applications are discussed and Performance is evaluated to compare with traditional k-means algorithms
+
+
+Steps to run on env
+
+1) srun -p gpu -A general --gpus-per-node 1 --pty bash
+2) module avail deeplearning
+3) module load deeplearning
+
+
+Run main file
+python main.py
